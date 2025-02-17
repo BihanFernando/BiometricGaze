@@ -15,7 +15,7 @@ CORS(app)
 load_dotenv()
 
 # MongoDB setup
-MONGO_URI = os.getenv("MONGO_URI")
+MONGO_URI="mongodb+srv://kalindu:20011002@biometricgaze.aocsa.mongodb.net/"
 if not MONGO_URI:
     raise ValueError("MONGO_URI is not set in the environment")
 client = MongoClient(MONGO_URI)
